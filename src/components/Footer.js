@@ -8,13 +8,13 @@ const Footer = () => {
       <footer className="py-4">
         <div className="container-xxl">
           <div className="row align-items-center">
-            <div className="col-5">
+            <div className="col-lg-5 col-12">
               <div className="footer-top-data d-flex gap-30 align-items-center">
                 <img src={newsletter} alt="newsletter" />
                 <h2 className="mb-0 text-white">Sign Up for Newsletter</h2>
               </div>
             </div>
-            <div className="col-7">
+            <div className="col-lg-7 col-12">
               <div className="input-group">
                 <input
                   type="text"
@@ -34,7 +34,7 @@ const Footer = () => {
       <footer className="py-4">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-4">
+            <div className="col-sm-4 col-12">
               <h4 className="text-white mb-4">Contact Us</h4>
               <div>
                 <address className="text-white fs-6">
@@ -69,7 +69,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-sm-3 col-12 sec">
               <h4 className="text-white mb-4">Information</h4>
               <div className="footer-link d-flex flex-column">
                 <Link to="/privacy-policy" className="text-white py-2 mb-1">
@@ -87,7 +87,7 @@ const Footer = () => {
                 <Link className="text-white py-2 mb-1">Blogs</Link>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-sm-3 col-12 sec">
               <h4 className="text-white mb-4">Account</h4>
               <div className="footer-link d-flex flex-column">
                 <Link className="text-white py-2 mb-1">About Us</Link>
@@ -95,7 +95,7 @@ const Footer = () => {
                 <Link  className="text-white py-2 mb-1">Contact</Link>
               </div>
             </div>
-            <div className="col-2">
+            <div className="col-sm-2 col-12 sec">
               <h4 className="text-white mb-4">Quick Links</h4>
               <div className="footer-link d-flex flex-column">
                 <Link className="text-white py-2 mb-1">Laptops</Link>

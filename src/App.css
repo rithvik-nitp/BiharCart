@@ -104,9 +104,73 @@ a {
   background-color: transparent;
   color: var(--color-febd69) !important;
 }
+
+
+
+.hamburger{
+  display:none;
+}
+
+@media screen and (max-width: 1000px){
+  .header-upper-hidden{
+    display:none;
+  }
+  .hamburger{
+    display: initial;
+    z-index: 5;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    display: flex;
+    padding-top: 150px;
+    /* justify-content: center; */
+    gap: 58px;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    background: var(--color-232f3e);
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 20;
+    transition: 0.9s;
+    
+  }
+  .nav-menu.hide{
+    display: none;
+  }
+  .nav-menu.active {
+    right: 0;
+   
+  }
+
+}
+@media screen and (min-width:1000px){
+  .mobilemenu{
+    display: none;
+  }
+}
+
+
 /* Header Part End Here */
 
 /* Footer Part */
+
+@media screen and (max-width: 1000px) {
+  footer .row{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .sec{
+    padding-top: 24px;
+  }
+  footer .input-group{
+    margin-top: 10px;
+  }
+}
+
 
 footer {
   background-color: var(--color-232f3e);
@@ -222,6 +286,28 @@ footer .input-group-text {
 /* Home Page Ends */
 
 /* BLog Part */
+@media screen and (max-width: 1200px){
+  .blog-wrapper .blog{
+display:flex;
+flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  .blog-wrapper .blog{
+display:flex;
+flex-direction: column;
+  }
+
+  .blog-wrapper .blog1{
+    display:flex;
+    flex-direction: column;
+      }
+
+}
+
+
 
 .blog-card {
   background-color: white;
@@ -268,6 +354,57 @@ footer .input-group-text {
   font-size: 14px;
 }
 /*  Blog Part ends here */
+
+
+
+/* Featured Collection Starts here */
+@media screen and (max-width: 600px){
+  .featured .featured1{
+display:flex;
+flex-direction: column;
+  }
+
+  .featured .featured2{
+    display:flex;
+    flex-direction: column;
+      }
+
+}
+@media screen and (max-width: 1200px){
+  .featured .featured1{
+display:flex;
+flex-direction: column;
+  }
+}
+
+/* Featured collection ends here */
+
+
+/* popular products section starts here */
+@media screen and (max-width: 600px){
+  .product .product1{
+display:flex;
+flex-direction: column;
+  }
+
+  .product .product2{
+    display:flex;
+    flex-direction: column;
+      }
+
+}
+@media screen and (max-width: 1200px){
+  .product .product1{
+display:flex;
+flex-direction: column;
+  }
+}
+
+
+
+/* popular products section ends  */
+
+
 
 /* Product Card */
 

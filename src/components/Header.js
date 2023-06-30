@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Hamburger from "hamburger-react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import compare from "../images/compare.svg";
@@ -7,6 +8,7 @@ import user from "../images/user.svg";
 import cart from "../images/cart.svg";
 import menu from "../images/menu.svg";
 const Header = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <header className="header-top-strip py-3">
@@ -31,12 +33,12 @@ const Header = () => {
       <header className="header-upper py-3">
         <div className="container-xxl">
           <div className="row align-items-center">
-            <div className="col-2">
+            <div className="col-lg-2 col-4">
               <h2>
                 <Link className="text-white">BiharCart</Link>
               </h2>
             </div>
-            <div className="col-5">
+            <div className="col-lg-5 col-8">
               <div className="input-group">
                 <input
                   type="text"
@@ -50,7 +52,7 @@ const Header = () => {
                 </span>
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-5 header-upper-hidden">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
                   <Link
@@ -106,9 +108,9 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="menu-bottom d-flex align-items-center gap-30">
-                <div>
-                  <div className="dropdown">
+              <div className="menu-bottom d-flex align-items-center justify-content-between gap-30">
+                <div className="text-white hamburger"  onClick={() => setOpen(!open)}>
+                  {/* <div className="dropdown">
                     <button
                       className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
                       type="button"
@@ -146,7 +148,8 @@ const Header = () => {
                         </Link>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
+                  <Hamburger direction="left" size={20} />
                 </div>
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-15">
@@ -161,6 +164,56 @@ const Header = () => {
           </div>
         </div>
       </header>
+
+        {/* Mobile view */}
+        <div className={`mobilemenu ${open ? "nav-menu active" : "nav-menu hide"}`}>
+        <div className="">
+          <Link
+            to="/compare-product"
+            className="d-flex align-items-center gap-10 text-white"
+          >
+            <img src={compare} alt="compare" />
+            <p className="mb-0">
+              Compare <br /> Products
+            </p>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="/wishlist"
+            className="d-flex align-items-center gap-10 text-white"
+          >
+            <img src={wishlist} alt="wishlist" />
+            <p className="mb-0">
+              Favourite <br /> wishlist
+            </p>
+          </Link>
+        </div>
+        <div>
+          <Link
+            to="/login"
+            className="d-flex align-items-center gap-10 text-white"
+          >
+            <img src={user} alt="user" />
+            <p className="mb-0">
+              Log in <br /> My Account
+            </p>
+          </Link>
+        </div>
+        <div>
+          <Link
+            to="/cart"
+            className="d-flex align-items-center gap-10 text-white "
+          >
+            <img src={cart} alt="cart" />
+            <div className="d-flex flex-column gap-10">
+              <span className="badge bg-white text-dark">0</span>
+              <p className="mb-0">$ 500</p>
+            </div>
+          </Link>
+        </div>
+      </div>
     </>
   );
 };

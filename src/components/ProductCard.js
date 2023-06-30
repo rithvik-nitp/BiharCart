@@ -17,7 +17,7 @@ const ProductCard = (props) => {
     <>
       <div
         className={` ${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+          location.pathname == "/product" ? `gr-${grid}` : ""
         } `}
       >
         <Link
@@ -74,7 +74,9 @@ const ProductCard = (props) => {
           </div>
         </Link>
       </div>
-      <div
+      
+       {/* 2nd one prev */}
+      {/* <div
         className={` ${
           location.pathname == "/product" ? `gr-${grid}` : "col-3"
         } `}
@@ -132,7 +134,7 @@ const ProductCard = (props) => {
             </div>
           </div>
         </Link>
-      </div>
+      </div> */}
     </>
   );
 };
