@@ -10,6 +10,7 @@ import Container from "../components/Container";
 const Home = () => {
   return (
     <>
+    {/* Home-wrapper-1 starts here */}
       <Container class1="home-wrapper-1 py-5">
         <div className="row">
           <div className="col-6">
@@ -89,8 +90,8 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      
-      
+
+{/* Home-wrapper-2 starts here */}
       <Container class1="home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
@@ -155,33 +156,28 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      
+
+      {/* Featured collection starts here */}
       <Container class1="featured-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Featured Collection</h3>
           </div>
-          {/* <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard /> */}
         </div>
 
-        <div className="featured ">
-          <div className="d-flex gap-5 featured1">
-            <div className="d-flex gap-5 featured2">
-              <ProductCard />
-              <ProductCard />
-            </div>
-            <div className="d-flex gap-5 featured2">
-              <ProductCard />
-              <ProductCard />
-            </div>
-          </div>
-         
+        <div className="featuredtest">
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
         </div>
       </Container>
 
+      {/* Famous products section starts here */}
       <Container class1="famous-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-3">
@@ -247,6 +243,7 @@ const Home = () => {
         </div>
       </Container>
 
+      {/* special products section starts here */}
       <Container class1="special-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
@@ -261,39 +258,28 @@ const Home = () => {
         </div>
       </Container>
 
-{/* Popular products section starts here */}
 
+      {/* Popular products section starts here */}
       <Container class1="popular-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Our Popular Products</h3>
           </div>
         </div>
-        {/* <div className="row">
+        <div className="producttest">
           <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
-        </div> */}
-
-        <div className="product ">
-          <div className="d-flex gap-5 product1">
-            <div className="d-flex gap-5 product2">
-              <ProductCard />
-              <ProductCard />
-            </div>
-            <div className="d-flex gap-5 product2">
-              <ProductCard />
-              <ProductCard />
-            </div>
-          </div>
-         
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
         </div>
-
       </Container>
 
-{/* Marquee section starts here */}
 
+      {/* Marquee section starts here */}
       <Container class1="marque-wrapper home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
@@ -329,37 +315,24 @@ const Home = () => {
         </div>
       </Container>
 
+
+      {/* Blogs section starts here */}
       <Container class1="blog-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Our Latest Blogs</h3>
           </div>
         </div>
-        {/* <div className="row">
-          <div className="col-3">
-            <BlogCard />
-          </div>
-          <div className="col-3">
-            <BlogCard />
-          </div>
-          <div className="col-3">
-            <BlogCard />
-          </div>
-          <div className="col-3">
-            <BlogCard />
-          </div>
-        </div> */}
-
-        <div className="blog d-flex gap-5">
-  <div className="d-flex gap-5 blog1">
-    <BlogCard/>
-    <BlogCard/>
-  </div>
-  <div className="d-flex gap-5 blog1">
-    <BlogCard/>
-    <BlogCard/>
-  </div>
-</div>
+        <div className="blogtest">
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+        </div>
       </Container>
     </>
   );

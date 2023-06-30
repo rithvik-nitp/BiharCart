@@ -285,27 +285,39 @@ footer .input-group-text {
 /* categories section ends here */
 /* Home Page Ends */
 
-/* BLog Part */
-@media screen and (max-width: 1200px){
-  .blog-wrapper .blog{
-display:flex;
-flex-direction: column;
-  }
 
+
+
+
+       /* BLog Part */
+
+.blogtest{
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 20px;
 }
 
-@media screen and (max-width: 600px){
-  .blog-wrapper .blog{
-display:flex;
-flex-direction: column;
+@media screen and (min-width:648px){
+.blogtest{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+}
+}
+
+@media screen and (min-width:1000px){
+  .blogtest{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+  }
   }
 
-  .blog-wrapper .blog1{
-    display:flex;
-    flex-direction: column;
-      }
+  @media screen and (min-width:1350px){
+    .blogtest{
+      display: grid;
+      grid-template-columns: repeat(4,auto);
+    }
+    }
 
-}
 
 
 
@@ -357,52 +369,79 @@ flex-direction: column;
 
 
 
+
+
+
 /* Featured Collection Starts here */
-@media screen and (max-width: 600px){
-  .featured .featured1{
-display:flex;
-flex-direction: column;
+
+.featuredtest{
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 20px;
+}
+
+@media screen and (min-width:648px){
+.featuredtest{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+}
+}
+
+@media screen and (min-width:1000px){
+  .featuredtest{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+  }
   }
 
-  .featured .featured2{
-    display:flex;
-    flex-direction: column;
-      }
+  @media screen and (min-width:1350px){
+    .featuredtest{
+      display: grid;
+      grid-template-columns: repeat(4,auto);
+    }
+    }
 
-}
-@media screen and (max-width: 1200px){
-  .featured .featured1{
-display:flex;
-flex-direction: column;
-  }
-}
 
 /* Featured collection ends here */
 
 
+
+
+
+
 /* popular products section starts here */
-@media screen and (max-width: 600px){
-  .product .product1{
-display:flex;
-flex-direction: column;
-  }
 
-  .product .product2{
-    display:flex;
-    flex-direction: column;
-      }
 
-}
-@media screen and (max-width: 1200px){
-  .product .product1{
-display:flex;
-flex-direction: column;
-  }
+.producttest{
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 20px;
 }
 
+@media screen and (min-width:648px){
+.producttest{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+}
+}
 
+@media screen and (min-width:1000px){
+  .producttest{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+  }
+  }
+
+  @media screen and (min-width:1350px){
+    .producttest{
+      display: grid;
+      grid-template-columns: repeat(4,auto);
+    }
+    }
 
 /* popular products section ends  */
+
+
 
 
 
@@ -461,6 +500,8 @@ flex-direction: column;
 }
 /* Product Card ends here */
 
+
+
 /* Special Product */
 
 .special-product-card {
@@ -470,6 +511,9 @@ flex-direction: column;
 }
 
 /* Special Product ends here */
+ 
+
+
 
 /* famous card */
 
