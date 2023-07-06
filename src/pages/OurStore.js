@@ -11,7 +11,7 @@ import { getAllProducts } from "../features/products/productSlice";
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
 const productState =useSelector((state) => state.product.product);
-console.log(productState);
+// console.log(productState);
 
   const dispatch = useDispatch();
 
@@ -260,7 +260,7 @@ console.log(productState);
             </div>
             <div className="products-list pb-5">
               <div className="d-flex gap-10 flex-wrap">
-                <ProductCard grid={grid} />
+                <ProductCard grid={grid} data={productState} />
               </div>
             </div>
           </div>

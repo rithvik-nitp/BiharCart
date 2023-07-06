@@ -1,13 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
 import Container from "../components/Container";
+// import { useDispatch, useSelector } from "react-redux";
 // import { services } from "../utils/Data";
 
+
+// import React from "react";
+
+
 const Home = () => {
+  
   return (
     <>
     {/* Home-wrapper-1 starts here */}
@@ -167,13 +173,13 @@ const Home = () => {
 
         <div className="featuredtest">
           <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {/* <ProductCard /> */}
+          {/* <ProductCard /> */}
+          {/* <ProductCard /> */}
+          {/* <ProductCard /> */}
+          {/* <ProductCard /> */}
+          {/* <ProductCard /> */}
+          {/* <ProductCard /> */}
         </div>
       </Container>
 
